@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+
+@theme{
+    --color-primary: #6366f1;
+  --color-secondary: #f59e0b;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Poppins", sans-serif;
+
+  --radius-lg: 1rem;
+}
+@layer components{
+    .wrapper{
+    @apply max-w-[1240px] mx-auto px-3 md:px-6 lg:px-8
+}
+}
