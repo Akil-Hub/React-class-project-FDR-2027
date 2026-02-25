@@ -5,7 +5,7 @@ import programming from'./assets/programing.jpg'
 const App = () => {
   return (
     <>
-      <section className="flex wrapper justify-center items-center h-screen">
+      <section className="flex wrapper justify-center items-center h-100VH">
         <div>
           <div className="bg-amber-600 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
           <div className="bg-amber-500 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
