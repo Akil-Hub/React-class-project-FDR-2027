@@ -1,46 +1,25 @@
-import { AiFillBank } from "react-icons/ai";
-import CustomIcon from "./components/CustomIcon";
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import Error from "./pages/Error";
+import RootLayout from "./layouts/RootLayout";
 
-import programming from'./assets/programing.jpg'
 const App = () => {
   return (
     <>
-      <section className="flex wrapper justify-center items-center h-100vh">
-        <div>
-          <div className="bg-amber-600 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
-          <div className="bg-amber-500 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
-          <div className="bg-amber-400 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
-          <div className="bg-amber-300 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
-          <div className="bg-amber-200 h-20 w-40 m-4 "><AiFillBank size={40} className="flex justify-center items-center mx-auto my-auto"/></div>
-        </div>
-        <div>
-          <div className="bg-blue-600 h-20 w-40 m-4 "> <CustomIcon/></div>
-          <div className="bg-blue-500 h-20 w-40 m-4 "> <CustomIcon/></div>
-          <div className="bg-blue-400 h-20 w-40 m-4 "> <CustomIcon/></div>
-          <div className="bg-blue-300 h-20 w-40 m-4 "> <CustomIcon/></div>
-          <div className="bg-blue-200 h-20 w-40 m-4 "> <CustomIcon/></div>
-        </div>
-        <div>
-          <div className="bg-green-600 h-20 w-40 m-4 "></div>
-          <div className="bg-green-500 h-20 w-40 m-4 "></div>
-          <div className="bg-green-400 h-20 w-40 m-4 "></div>
-          <div className="bg-green-300 h-20 w-40 m-4 "></div>
-          <div className="bg-green-200 h-20 w-40 m-4 "></div>
-        </div>
-        <div>
-          <div className="bg-red-600 h-20 w-40 m-4 my-20 "> <img src={programming} alt="" /> </div>
-          <div className="bg-red-500 h-20 w-40 m-4 my-20 "> <img src={programming} alt="" /> </div>
-          <div className="bg-red-400 h-20 w-40 m-4 my-20 "> <img src={programming} alt="" /> </div>
-          <div className="bg-red-300 h-20 w-40 m-4 my-20 "> <img src={programming} alt="" /> </div>
-          <div className="bg-red-200 h-20 w-40 m-4  my-20"> <img src={programming} alt="" /> </div>
-        </div>
-        <div>
-          <div className="bg-violet-600 h-20 w-40 m-4 "></div>
-          <div className="bg-violet-500 h-20 w-40 m-4 "></div>
-          <div className="bg-violet-400 h-20 w-40 m-4 "></div>
-          <div className="bg-violet-300 h-20 w-40 m-4 "></div>
-          <div className="bg-violet-200 h-20 w-40 m-4 "></div>
-        </div>
+      <section>
+        
+        <Routes>
+          <Route path="/" element={<RootLayout />}>
+            <Route index element={<Home/>} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="services" element={<Services />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
       </section>
     </>
   );
