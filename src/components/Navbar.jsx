@@ -11,8 +11,8 @@ import Button from './common/Button'
 const Navbar = () => {
     const commonMenuClass = `hover:text-primary  duration-300  active:scale-90`
   return (
-    <>
-    <header className='wrapper flex justify-between items-center'>
+    <article className='bg-sky-200'>
+    <header className='wrapper flex justify-between items-center '>
         <Link to={'/'}><Image imgSrc={logo} altSrc={logo}/></Link>
 
         <ul className='flex gap-5 items-center font-semibold text-xl text-gray-700'>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <Button title={'See More'} />
     </header>
-    </>
+    </article>
   )
 }
 
