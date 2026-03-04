@@ -1,20 +1,7 @@
-
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
-import Home from "./pages/Home";
-import RootLayout from "./layouts/RootLayout";
-
+import { RouterProvider } from "react-router-dom";
+import { router } from "./route.jsx";
 const App = () => {
-  return (
-    <>
-      <section>
-
-      
-      </section>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
