@@ -11,11 +11,11 @@ import Button from './common/Button'
 const Navbar = () => {
     const commonMenuClass = `hover:text-primary  duration-300  active:scale-90`
   return (
-    <article className='bg-sky-200'>
-    <header className='wrapper flex justify-between items-center '>
+    <article className='bg-[#030D1180] '>
+    <header className='wrapper flex justify-between items-center sticky '>
         <Link to={'/'}><Image imgSrc={logo} altSrc={logo}/></Link>
 
-        <ul className='flex gap-5 items-center font-semibold text-xl text-gray-700'>
+        <ul className='flex gap-5 items-center font-semibold text-xl text-gray-200'>
             <li className={`${commonMenuClass}`}><Link to={'/'}>Home</Link></li>
             <li className={`${commonMenuClass}`}><Link to={'/about'}>About</Link></li>
             <li className={`${commonMenuClass}`}><Link to={'/services'}>Services</Link></li>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         </ul>
 
-        <Button title={'See More'} />
+        <Button title={'See More'} className='hover:text-white hover:bg-primary!' />
     </header>
     </article>
   )

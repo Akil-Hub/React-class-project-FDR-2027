@@ -1,23 +1,22 @@
 @import "tailwindcss";
 
-
-@theme{
-    --color-primary: #6366f1;
-  --color-secondary: #f59e0b;
+@theme {
+  --color-primary: #d6a033;
+  --color-secondary: #181d21;
 
   --font-sans: "Inter", sans-serif;
   --font-display: "Poppins", sans-serif;
-
-  --radius-lg: 1rem;
 }
-@layer components{
-    .wrapper{
-    @apply max-w-[1240px] mx-auto px-3 md:px-6 lg:px-8 py-3
+@layer components {
+  .wrapper {
+    @apply max-w-[1200px] mx-auto px-3 md:px-6 lg:px-8 py-3;
+  }
 }
-}
-@layer base{
-    body{
-    @apply bg-gray-50
-    }
-
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+  p{
+    @apply text-gray-400
+  }
 }

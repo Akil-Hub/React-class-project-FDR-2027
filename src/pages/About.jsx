@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import BlogSection from "../components/BlogSection";
+import Services from "../components/OurServices";
+import WhyChoseUs from "../components/WhyChoseUs";
+import OurServices from "../components/OurServices";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center h-screen font-bold text-5xl">About</div>
-  )
-}
+    <div>
+      <BlogSection />
+      <WhyChoseUs />
+      <OurServices />
+    </div>
+  );
+};
 
-export default About
+export default About;

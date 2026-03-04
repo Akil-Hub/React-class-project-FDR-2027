@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Showcase from "../components/Showcase";
+import ProductCard from "../components/ProductCard";
+import OurTeam from "../components/OurTeam";
+import OurServices from "../components/OurServices";
 
 const Services = () => {
   return (
-    <div className="flex justify-center items-center h-screen font-bold text-5xl">Services</div>
-  )
-}
+    <div>
+      <OurServices />
+      <ProductCard />
+      <OurTeam />
+      <Showcase />
+    </div>
+  );
+};
 
-export default Services
+export default Services;

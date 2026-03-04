@@ -1,8 +1,12 @@
 import React from 'react'
+import Testimonials from '../components/Testimonials'
 
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center h-screen font-bold text-5xl">Contact</div>
+    <div>
+      
+      <Testimonials/>
+    </div>
   )
 }
 
